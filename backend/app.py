@@ -7,7 +7,7 @@ import uuid
 app = Flask(__name__)
 
 # Configuración del productor Kafka
-#producer = KafkaProducer(bootstrap_servers='localhost:9092', value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+producer = KafkaProducer(bootstrap_servers='localhost:9092', value_serializer=lambda v: json.dumps(v).encode('utf-8'))
 
 # Almacenamiento temporal en memoria (simulación de base de datos)
 usuarios = {}
@@ -74,7 +74,7 @@ def crear_tarea():
     task_id = str(uuid.uuid4())
     tareas[task_id] = {'id': task_id, 'descripcion': data['descripcion'], 'usuario_id': data['usuario_id']}
     # Enviar tarea a Kafka
-    # producer.send('task_topic', tareas[task_id])
+    producer.send('task_topic', tareas[task_id])
     return jsonify({'message': 'Tarea creada y enviada para procesamiento', 'tarea': tareas[task_id]}), 201
 
 # Ruta para listar tareas

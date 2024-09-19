@@ -15,5 +15,11 @@ services:
       - redis
     volumes:
       - redisinsight-data:/db
+  
+  broker:
+    image: apache/kafka:latest
+    container_name: broker
+    ports:
+     - 9092:9092
 volumes:
   redisinsight-data:
