@@ -1,0 +1,19 @@
+services:
+  redis:
+    image: redis/redis-stack-server:latest
+    ports:
+      - 6379:6379
+    command: ["redis-server", "--appendonly", "yes", "--protected-mode", "no"]
+    volumes:
+      - /local-data/:/data
+  
+  redisinsight:
+    image: redis/redisinsight:latest
+    ports:
+      - 8001:5540
+    depends_on:
+      - redis
+    volumes:
+      - redisinsight-data:/db
+volumes:
+  redisinsight-data:
