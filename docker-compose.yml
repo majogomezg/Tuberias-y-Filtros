@@ -21,5 +21,16 @@ services:
     container_name: broker
     ports:
      - 9092:9092
+    
+  backend2:
+    build:
+      context: ./backend2   # Contexto de construcción relativo a donde está el docker-compose.yml
+    depends_on:             # Correcta estructura para depends_on
+      - redis
+      - broker
+    environment:
+      - KAFKA_BOOTSTRAP_SERVERS=broker:9092
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
 volumes:
   redisinsight-data:
