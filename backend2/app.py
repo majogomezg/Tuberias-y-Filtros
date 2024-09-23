@@ -1,25 +1,59 @@
+import logging
 from kafka import KafkaConsumer
 import redis
 import json
+from dotenv import load_dotenv
+import os
+
+# Configurar logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("backend2.log"),
+        logging.StreamHandler()
+    ]
+)
 
 # Conectar a Redis en Docker (nombre del servicio como host)
-redis_client = redis.StrictRedis(host='redis', port=6379, db=0)
+try:
+    redis_client = redis.StrictRedis(host='redis', port=6379, db=0)
+    redis_client.ping()
+    logging.info("Conectado a Redis con éxito.")
+except redis.ConnectionError:
+    logging.error("No se pudo conectar a Redis.")
+
+load_dotenv()
+
+host = os.getenv("BROKER_HOST")
+if host == None:
+    host = "localhost"
+    logging.info(f"Usando host predeterminado para Kafka: {host}")
 
 # Configuración del consumidor de Kafka
-consumer = KafkaConsumer(
-    'task_topic',  # Nombre del "topic" de Kafka
-    bootstrap_servers='broker:9092',  # Cambia a 'broker' que es el nombre del contenedor de Kafka
-    value_deserializer=lambda m: json.loads(m.decode('utf-8'))
-)
+try:
+    consumer = KafkaConsumer(
+        'task_topic',  # Nombre del "topic" de Kafka
+        bootstrap_servers=f'{host}:9092',  # Cambia a 'broker' que es el nombre del contenedor de Kafka
+        value_deserializer=lambda m: json.loads(m.decode('utf-8'))
+    )
+    logging.info("Conectado a Kafka con éxito.")
+except Exception as e:
+    logging.error(f"No se pudo conectar a Kafka: {e}")
 
 # Procesar los mensajes de Kafka y guardarlos en Redis
 for message in consumer:
     task_data = message.value
     task_id = task_data.get('id')
     
+    logging.info(f"Mensaje recibido de Kafka: {task_data}")
+
     if task_id:
-        # Guardar tarea en Redis usando el ID como clave
-        redis_client.hset('tasks', task_id, json.dumps(task_data))
-        print(f"Tarea {task_id} guardada en Redis con éxito.")
+        try:
+            # Guardar tarea en Redis usando el ID como clave
+            redis_client.hset('tasks', task_id, json.dumps(task_data))
+            logging.info(f"Tarea {task_id} guardada en Redis con éxito.")
+        except Exception as e:
+            logging.error(f"Error al guardar la tarea en Redis: {e}")
     else:
-        print("ID de tarea no encontrado en el mensaje recibido.")
+        logging.warning("ID de tarea no encontrado en el mensaje recibido.")

@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   redis:
     image: redis/redis-stack-server:latest
@@ -6,7 +8,9 @@ services:
     command: ["redis-server", "--appendonly", "yes", "--protected-mode", "no"]
     volumes:
       - /local-data/:/data
-  
+    networks:
+      - taller_network
+
   redisinsight:
     image: redis/redisinsight:latest
     ports:
@@ -15,10 +19,60 @@ services:
       - redis
     volumes:
       - redisinsight-data:/db
-  
+    networks:
+      - taller_network
+
+  zookeeper:
+    image: wurstmeister/zookeeper:latest
+    ports:
+      - 2181:2181
+    networks:
+      - taller_network
+
   broker:
-    image: apache/kafka:latest
+    image: wurstmeister/kafka:latest
     container_name: broker
     ports:
-     - 9092:9092
-     
+      - 9092:9092
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:9092
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    networks:
+      - taller_network
+
+  service-a:
+    build:
+      context: ./backend
+    ports:
+      - 5001:5000
+    depends_on:
+      - broker
+    environment:
+      BROKER_HOST: broker
+    networks:
+      - taller_network
+
+  backend2:
+    build:
+      context: ./backend2  
+    ports: 
+      - 5002:5000
+    depends_on:
+      - redis
+      - broker
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+    networks:
+      - taller_network
+
+volumes:
+  redisinsight-data:
+
+networks:
+  taller_network:
+    driver: bridge
