@@ -21,5 +21,4 @@ services:
     container_name: broker
     ports:
      - 9092:9092
-volumes:
-  redisinsight-data:
+     
