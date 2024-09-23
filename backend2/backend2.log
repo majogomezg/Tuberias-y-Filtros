@@ -1,0 +1,291 @@
+2024-09-20 12:10:45,882 - ERROR - No se pudo conectar a Redis.
+2024-09-20 12:10:45,882 - INFO - Usando host predeterminado para Kafka: localhost
+2024-09-20 12:10:45,892 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-09-20 12:10:45,892 - INFO - Probing node bootstrap-0 broker version
+2024-09-20 12:10:45,896 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-09-20 12:10:46,004 - INFO - Broker version identified as 2.5.0
+2024-09-20 12:10:46,004 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-09-20 12:10:46,005 - WARNING - group_id is None: disabling auto-commit.
+2024-09-20 12:10:46,005 - INFO - Updating subscribed topics to: ('task_topic',)
+2024-09-20 12:10:46,008 - INFO - Conectado a Kafka con éxito.
+2024-09-20 12:10:46,008 - INFO - Updated partition assignment: [TopicPartition(topic='task_topic', partition=0)]
+2024-09-20 12:10:48,896 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:10:48,896 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:10:51,656 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:10:51,656 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:10:54,417 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:10:54,417 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:10:57,175 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:10:57,175 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:10:59,945 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:10:59,945 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:02,699 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:02,699 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:05,447 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:05,448 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:08,210 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:08,210 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:10,961 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:10,961 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:13,703 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:13,704 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:16,442 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:16,443 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:19,221 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:19,221 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:21,967 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:21,967 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:24,718 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:24,720 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:27,470 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:27,470 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:30,233 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:30,234 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:33,010 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:33,010 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:35,760 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:35,760 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:38,523 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:38,524 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:41,267 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:41,267 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:44,031 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:44,031 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:46,777 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:46,777 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:49,542 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:49,542 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:52,303 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:52,304 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:55,049 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:55,050 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:11:57,808 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:11:57,809 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:12:00,544 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:12:00,545 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:12:03,302 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:12:03,302 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:12:06,051 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:12:06,051 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:13,395 - ERROR - No se pudo conectar a Redis.
+2024-09-20 12:27:13,396 - INFO - Usando host predeterminado para Kafka: localhost
+2024-09-20 12:27:13,401 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-09-20 12:27:13,401 - INFO - Probing node bootstrap-0 broker version
+2024-09-20 12:27:13,403 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-09-20 12:27:13,527 - INFO - Broker version identified as 2.5.0
+2024-09-20 12:27:13,527 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-09-20 12:27:13,527 - WARNING - group_id is None: disabling auto-commit.
+2024-09-20 12:27:13,527 - INFO - Updating subscribed topics to: ('task_topic',)
+2024-09-20 12:27:13,530 - INFO - Conectado a Kafka con éxito.
+2024-09-20 12:27:13,533 - INFO - Updated partition assignment: [TopicPartition(topic='task_topic', partition=0)]
+2024-09-20 12:27:16,389 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:16,390 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:19,130 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:19,130 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:21,862 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:21,863 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:24,603 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:24,603 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:27,351 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:27,353 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:30,105 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:30,106 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:32,842 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:32,842 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:35,589 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:35,590 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:38,339 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:38,339 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:41,083 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:41,083 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:43,834 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:43,834 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:46,569 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:46,569 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:49,317 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:49,318 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:52,065 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:52,066 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:54,817 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:54,818 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:27:57,567 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:27:57,576 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:00,311 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:00,311 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:03,056 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:03,056 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:05,806 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:05,806 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:08,559 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:08,559 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:11,304 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:11,305 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:14,052 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:14,053 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:16,805 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:16,805 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:19,555 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:19,556 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:22,298 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:22,298 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:25,051 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:25,051 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:27,800 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:27,800 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:30,551 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:30,552 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:33,280 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:33,288 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:36,030 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:36,030 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:38,795 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:38,795 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:41,544 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:41,545 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:44,309 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:44,310 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:47,073 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:47,073 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:49,814 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:49,814 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:52,572 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:52,573 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:55,326 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:55,326 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:28:58,081 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:28:58,081 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:29:00,831 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:29:00,832 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:29:03,585 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:29:03,585 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:29:06,318 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:29:06,318 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:29:09,046 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:29:09,047 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:29:11,798 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:29:11,799 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:29:14,552 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:29:14,553 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:29:17,317 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:29:17,317 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:29:20,077 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:29:20,078 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:29:22,825 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:29:22,825 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 12:29:25,571 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 12:29:25,571 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:06,853 - ERROR - No se pudo conectar a Redis.
+2024-09-20 13:38:06,855 - INFO - Usando host predeterminado para Kafka: localhost
+2024-09-20 13:38:06,855 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-09-20 13:38:06,855 - INFO - Probing node bootstrap-0 broker version
+2024-09-20 13:38:06,855 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-09-20 13:38:06,965 - INFO - Broker version identified as 2.5.0
+2024-09-20 13:38:06,965 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-09-20 13:38:06,965 - WARNING - group_id is None: disabling auto-commit.
+2024-09-20 13:38:06,965 - INFO - Updating subscribed topics to: ('task_topic',)
+2024-09-20 13:38:06,965 - INFO - Conectado a Kafka con éxito.
+2024-09-20 13:38:06,971 - INFO - Updated partition assignment: [TopicPartition(topic='task_topic', partition=0)]
+2024-09-20 13:38:09,830 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:09,838 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:12,588 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:12,589 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:15,324 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:15,324 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:18,078 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:18,078 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:20,832 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:20,832 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:23,559 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:23,559 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:26,316 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:26,318 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:29,092 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:29,092 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:31,850 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:31,850 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:34,596 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:34,597 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:37,338 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:37,339 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:40,100 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:40,101 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:42,862 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:42,863 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:45,625 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:45,626 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:38:48,385 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:38:48,385 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:40:54,208 - ERROR - No se pudo conectar a Redis.
+2024-09-20 13:40:54,208 - INFO - Usando host predeterminado para Kafka: localhost
+2024-09-20 13:40:54,208 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-09-20 13:40:54,208 - INFO - Probing node bootstrap-0 broker version
+2024-09-20 13:40:54,208 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-09-20 13:40:54,321 - INFO - Broker version identified as 2.5.0
+2024-09-20 13:40:54,322 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-09-20 13:40:54,323 - WARNING - group_id is None: disabling auto-commit.
+2024-09-20 13:40:54,323 - INFO - Updating subscribed topics to: ('task_topic',)
+2024-09-20 13:40:54,324 - INFO - Conectado a Kafka con éxito.
+2024-09-20 13:40:54,326 - INFO - Updated partition assignment: [TopicPartition(topic='task_topic', partition=0)]
+2024-09-20 13:40:57,205 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:40:57,206 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:40:59,961 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:40:59,961 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:41:02,694 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:41:02,695 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:41:05,445 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:41:05,446 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:41:08,203 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:41:08,203 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:41:10,969 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:41:10,970 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:41:13,723 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:41:13,724 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:41:16,470 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:41:16,470 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:41:19,221 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:41:19,222 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:55:51,776 - ERROR - No se pudo conectar a Redis.
+2024-09-20 13:55:51,776 - INFO - Usando host predeterminado para Kafka: localhost
+2024-09-20 13:55:51,776 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-09-20 13:55:51,776 - INFO - Probing node bootstrap-0 broker version
+2024-09-20 13:55:51,776 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-09-20 13:55:51,887 - INFO - Broker version identified as 2.5.0
+2024-09-20 13:55:51,887 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-09-20 13:55:51,887 - WARNING - group_id is None: disabling auto-commit.
+2024-09-20 13:55:51,892 - INFO - Updating subscribed topics to: ('task_topic',)
+2024-09-20 13:55:51,892 - INFO - Conectado a Kafka con éxito.
+2024-09-20 13:55:51,896 - INFO - Updated partition assignment: [TopicPartition(topic='task_topic', partition=0)]
+2024-09-20 13:55:54,752 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:55:54,761 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:55:57,510 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:55:57,510 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-20 13:56:00,257 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-20 13:56:00,258 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-23 14:04:27,739 - ERROR - No se pudo conectar a Redis.
+2024-09-23 14:04:27,749 - INFO - Usando host predeterminado para Kafka: localhost
+2024-09-23 14:04:27,753 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-09-23 14:04:27,753 - INFO - Probing node bootstrap-0 broker version
+2024-09-23 14:04:29,762 - ERROR - No se pudo conectar a Kafka: NoBrokersAvailable
+2024-09-23 14:05:06,811 - ERROR - No se pudo conectar a Redis.
+2024-09-23 14:05:06,811 - INFO - Usando host predeterminado para Kafka: localhost
+2024-09-23 14:05:06,819 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2024-09-23 14:05:06,819 - INFO - Probing node bootstrap-0 broker version
+2024-09-23 14:05:06,819 - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2024-09-23 14:05:06,930 - INFO - Broker version identified as 2.5.0
+2024-09-23 14:05:06,930 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-09-23 14:05:06,930 - WARNING - group_id is None: disabling auto-commit.
+2024-09-23 14:05:06,930 - INFO - Updating subscribed topics to: ('task_topic',)
+2024-09-23 14:05:06,930 - INFO - Conectado a Kafka con éxito.
+2024-09-23 14:05:06,949 - INFO - Updated partition assignment: [TopicPartition(topic='task_topic', partition=0)]
+2024-09-23 14:05:09,846 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-23 14:05:09,847 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-23 14:05:12,594 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-23 14:05:12,595 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-23 14:05:15,323 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-23 14:05:15,324 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-23 14:05:18,057 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-23 14:05:18,058 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-23 14:05:20,792 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-23 14:05:20,792 - ERROR - DNS lookup failed for broker:9092 (0)
+2024-09-23 14:05:23,529 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2024-09-23 14:05:23,530 - ERROR - DNS lookup failed for broker:9092 (0)
