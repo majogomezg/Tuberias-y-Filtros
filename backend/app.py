@@ -3,11 +3,22 @@ from kafka import KafkaProducer
 import json
 import re
 import uuid
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
 
+load_dotenv()
+
+host = os.getenv("BROKER_HOST")
+if host == None:
+    host = "localhost"
+
 # Configuración del productor Kafka
-producer = KafkaProducer(bootstrap_servers='localhost:9092', value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+producer = KafkaProducer(
+    bootstrap_servers=f'{host}:9092', 
+    value_serializer=lambda v: json.dumps(v).encode('utf-8')
+)
 
 # Almacenamiento temporal en memoria (simulación de base de datos)
 usuarios = {}
@@ -73,7 +84,7 @@ def crear_tarea():
         return jsonify({'error': 'ID de usuario no válido o inexistente'}), 400
     task_id = str(uuid.uuid4())
     tareas[task_id] = {'id': task_id, 'descripcion': data['descripcion'], 'usuario_id': data['usuario_id']}
-    # Enviar tarea a Kafka
+# Enviar tarea a Kafka
     producer.send('task_topic', tareas[task_id])
     return jsonify({'message': 'Tarea creada y enviada para procesamiento', 'tarea': tareas[task_id]}), 201
 
