@@ -70,6 +70,15 @@ services:
     networks:
       - taller_network
 
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile # Asegúrate de que el archivo Dockerfile está en ./frontend
+    ports:
+      - 4321:4321
+    networks:
+      - taller_network
+
 volumes:
   redisinsight-data:
 
