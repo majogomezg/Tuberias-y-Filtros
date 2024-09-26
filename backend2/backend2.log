@@ -7,7 +7,7 @@
 2024-09-20 12:10:46,004 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
 2024-09-20 12:10:46,005 - WARNING - group_id is None: disabling auto-commit.
 2024-09-20 12:10:46,005 - INFO - Updating subscribed topics to: ('task_topic',)
-2024-09-20 12:10:46,008 - INFO - Conectado a Kafka con éxito.
+2024-09-20 12:10:46,008 - INFO - Conectado a Kafka con ï¿½xito.
 2024-09-20 12:10:46,008 - INFO - Updated partition assignment: [TopicPartition(topic='task_topic', partition=0)]
 2024-09-20 12:10:48,896 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
 2024-09-20 12:10:48,896 - ERROR - DNS lookup failed for broker:9092 (0)
@@ -76,7 +76,7 @@
 2024-09-20 12:27:13,527 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
 2024-09-20 12:27:13,527 - WARNING - group_id is None: disabling auto-commit.
 2024-09-20 12:27:13,527 - INFO - Updating subscribed topics to: ('task_topic',)
-2024-09-20 12:27:13,530 - INFO - Conectado a Kafka con éxito.
+2024-09-20 12:27:13,530 - INFO - Conectado a Kafka con ï¿½xito.
 2024-09-20 12:27:13,533 - INFO - Updated partition assignment: [TopicPartition(topic='task_topic', partition=0)]
 2024-09-20 12:27:16,389 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
 2024-09-20 12:27:16,390 - ERROR - DNS lookup failed for broker:9092 (0)
@@ -183,7 +183,7 @@
 2024-09-20 13:38:06,965 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
 2024-09-20 13:38:06,965 - WARNING - group_id is None: disabling auto-commit.
 2024-09-20 13:38:06,965 - INFO - Updating subscribed topics to: ('task_topic',)
-2024-09-20 13:38:06,965 - INFO - Conectado a Kafka con éxito.
+2024-09-20 13:38:06,965 - INFO - Conectado a Kafka con ï¿½xito.
 2024-09-20 13:38:06,971 - INFO - Updated partition assignment: [TopicPartition(topic='task_topic', partition=0)]
 2024-09-20 13:38:09,830 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
 2024-09-20 13:38:09,838 - ERROR - DNS lookup failed for broker:9092 (0)
@@ -224,7 +224,7 @@
 2024-09-20 13:40:54,322 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
 2024-09-20 13:40:54,323 - WARNING - group_id is None: disabling auto-commit.
 2024-09-20 13:40:54,323 - INFO - Updating subscribed topics to: ('task_topic',)
-2024-09-20 13:40:54,324 - INFO - Conectado a Kafka con éxito.
+2024-09-20 13:40:54,324 - INFO - Conectado a Kafka con ï¿½xito.
 2024-09-20 13:40:54,326 - INFO - Updated partition assignment: [TopicPartition(topic='task_topic', partition=0)]
 2024-09-20 13:40:57,205 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
 2024-09-20 13:40:57,206 - ERROR - DNS lookup failed for broker:9092 (0)
@@ -253,7 +253,7 @@
 2024-09-20 13:55:51,887 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
 2024-09-20 13:55:51,887 - WARNING - group_id is None: disabling auto-commit.
 2024-09-20 13:55:51,892 - INFO - Updating subscribed topics to: ('task_topic',)
-2024-09-20 13:55:51,892 - INFO - Conectado a Kafka con éxito.
+2024-09-20 13:55:51,892 - INFO - Conectado a Kafka con ï¿½xito.
 2024-09-20 13:55:51,896 - INFO - Updated partition assignment: [TopicPartition(topic='task_topic', partition=0)]
 2024-09-20 13:55:54,752 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
 2024-09-20 13:55:54,761 - ERROR - DNS lookup failed for broker:9092 (0)
@@ -275,7 +275,7 @@
 2024-09-23 14:05:06,930 - INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
 2024-09-23 14:05:06,930 - WARNING - group_id is None: disabling auto-commit.
 2024-09-23 14:05:06,930 - INFO - Updating subscribed topics to: ('task_topic',)
-2024-09-23 14:05:06,930 - INFO - Conectado a Kafka con éxito.
+2024-09-23 14:05:06,930 - INFO - Conectado a Kafka con ï¿½xito.
 2024-09-23 14:05:06,949 - INFO - Updated partition assignment: [TopicPartition(topic='task_topic', partition=0)]
 2024-09-23 14:05:09,846 - WARNING - DNS lookup failed for broker:9092, exception was [Errno 11001] getaddrinfo failed. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
 2024-09-23 14:05:09,847 - ERROR - DNS lookup failed for broker:9092 (0)
