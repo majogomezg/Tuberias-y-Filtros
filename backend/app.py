@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 load_dotenv()
 
-host = os.getenv("BROKER_HOST")
+host = os.getenv("BROKER_HOST","broker")
 if host == None:
     host = "localhost"
 
@@ -102,7 +102,9 @@ def actualizar_tarea(task_id):
     if not data.get('descripcion'):
         return jsonify({'error': 'Descripción de la tarea es requerida'}), 400
     tareas[task_id].update(data)
-    return jsonify({'message': 'Tarea actualizada', 'tarea': tareas[task_id]}), 200
+    # Enviar tarea a Kafka ACTUALIZAR
+    producer.send('task_topic', tareas[task_id])
+    return jsonify({'message': 'Tarea actualizada y enviada para procesamiento', 'tarea': tareas[task_id]}), 200
 
 # Ruta para eliminar una tarea
 @app.route('/tareas/<task_id>', methods=['DELETE'])
