@@ -65,7 +65,12 @@ for message in consumer:
     if task_id:
         try:
             # Guardar tarea en Redis usando el ID como clave
-            redis_client.hset('tasks', task_id, json.dumps(task_data))
+            counter = redis_client.incr('task_counter')
+            redis_client.hset(f'task:{counter}', mapping={
+                'id': task_data.get('id'),
+                'descripcion': task_data.get('descripcion'),
+                'usuario_id': task_data.get('usuario_id')
+            })
             logging.info(f"Tarea {task_id} guardada en Redis con éxito.")
         except Exception as e:
             logging.error(f"Error al guardar la tarea en Redis: {e}")
