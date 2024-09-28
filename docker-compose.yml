@@ -78,7 +78,7 @@ services:
   frontend:
     build:
       context: ./frontend
-      dockerfile: Dockerfile # Asegúrate de que el archivo Dockerfile está en ./frontend
+      dockerfile: Dockerfile 
     ports:
       - 4321:4321
     networks:
