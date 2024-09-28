@@ -15,10 +15,12 @@ if host == None:
     host = "localhost"
 
 # Configuración del productor Kafka
+print("Connecting to Kafka on:", f'{host}:9092')
 producer = KafkaProducer(
     bootstrap_servers=f'{host}:9092', 
     value_serializer=lambda v: json.dumps(v).encode('utf-8')
 )
+
 
 # Almacenamiento temporal en memoria (simulación de base de datos)
 usuarios = {}
