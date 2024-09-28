@@ -20,4 +20,4 @@ RUN npm run build
 EXPOSE 4321
 
 # Comando para ejecutar la aplicación
-CMD ["npm", "start"]
+CMD ["npm", "run", "start", "--", "--host"]

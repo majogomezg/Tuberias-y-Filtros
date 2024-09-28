@@ -4,30 +4,24 @@ services:
   redis:
     image: redis/redis-stack-server:latest
     ports:
-      - "6379:6379"
+      - 6379:6379
     command: ["redis-server", "--appendonly", "yes", "--protected-mode", "no"]
     volumes:
       - /local-data/:/data
-    networks:
-      - taller_network
 
   redisinsight:
     image: redis/redisinsight:latest
     ports:
-      - "8001:5540"
+      - 8001:5540
     depends_on:
       - redis
     volumes:
       - redisinsight-data:/db
-    networks:
-      - taller_network
 
   zookeeper:
     image: wurstmeister/zookeeper
     ports:
-      - "2181:2181"
-    networks:
-      - taller_network
+      - 2181:2181
 
   broker:
     image: wurstmeister/kafka
@@ -42,8 +36,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
      - zookeeper
-    networks:
-      - taller_network
 
 
   service-a:
@@ -51,20 +43,18 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     ports:
-      - "5001:5000"
+      - 5001:5000
     depends_on:
       - broker
     environment:
       BROKER_HOST: broker
-    networks:
-      - taller_network
 
   backend2:
     build:
       context: ./backend2
       dockerfile: Dockerfile
     ports: 
-      - "5002:5000"
+      - 5002:5000
     depends_on:
       - redis
       - broker
@@ -72,8 +62,6 @@ services:
       KAFKA_BOOTSTRAP_SERVERS: broker:9092
       REDIS_HOST: redis
       REDIS_PORT: 6379
-    networks:
-      - taller_network
 
   frontend:
     build:
@@ -81,12 +69,6 @@ services:
       dockerfile: Dockerfile 
     ports:
       - 4321:4321
-    networks:
-      - taller_network
 
 volumes:
   redisinsight-data:
-
-networks:
-  taller_network:
-    driver: bridge
