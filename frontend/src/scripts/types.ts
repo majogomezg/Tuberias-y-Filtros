@@ -5,7 +5,7 @@ export type User = {
 
     id?: string;
   
-    name: string;
+    nombre: string;
 
     email: string;
   
@@ -19,9 +19,9 @@ export type User = {
   
     id: string;
   
-    description: string;
+    descripcion: string;
   
-    userId: string;
+    user_id: string;
   
   };
   

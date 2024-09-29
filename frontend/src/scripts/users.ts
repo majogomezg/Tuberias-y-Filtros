@@ -2,10 +2,11 @@
 
 import { User } from './types';
 
-const apiUrl = 'http://localhost:5000';
+const apiUrl = 'http://localhost:5001';
 
 // Función para crear un nuevo usuario
 export const createUser = async (user: User): Promise<User> => {
+  console.log('user', user);
   const response = await fetch(`${apiUrl}/usuarios`, {
     method: 'POST',
     headers: {
@@ -14,6 +15,9 @@ export const createUser = async (user: User): Promise<User> => {
     body: JSON.stringify(user),
   });
   const data = await response.json();
+  if (!response.ok) {
+    throw new Error(data.error);
+  }
   return data.usuario;
 };
 

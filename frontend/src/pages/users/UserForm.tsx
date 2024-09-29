@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { createUser } from '@scripts/users';
 
-function UserForm() {
+const UserForm = () => {
   const [userData, setUserData] = useState({
-    name: '',
+    nombre: '',
     email: ''
   });
+  const [message, setMessage] = useState('');
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -14,55 +16,43 @@ function UserForm() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/usuarios', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(userData),
-      });
-
-      if (!response.ok) {
-        throw new Error(`Error al enviar el usuario: ${response.statusText}`);
-      }
-
-      const result = await response.json();
-      console.log('Usuario enviado con éxito:', result);
+      const response = createUser(userData);
+      const result = await response;
+      console.log('Usuario creado con éxito:', result);
+      setMessage(`Usuario creado con id: ${result.id}`);
     } catch (error) {
+      setMessage('Error al enviar el usuario');
       console.error('Error al enviar el usuario:', error);
     }
   };
 
   return (
     <form id="user-form" className="form" onSubmit={handleSubmit}>
-      <h2>Crear o Editar Usuario</h2>
+      <h2>Crear o Editar Usuario React</h2>
       <div className="form-group">
-        <label htmlFor="name">Nombre:</label>
+        <label htmlFor="nombre">Nombre:</label>
         <input
           type="text"
-          id="name"
-          name="name"
-          value={userData.name}
+          id="nombre"
+          name="nombre"
+          value={userData.nombre}
           onChange={handleInputChange}
-          required
         />
       </div>
-
       <div className="form-group">
-        <label htmlFor="email">Correo Electrónico:</label>
+        <label htmlFor="email">Email:</label>
         <input
-          type="text"
+          type="email"
           id="email"
           name="email"
           value={userData.email}
           onChange={handleInputChange}
-          required
         />
       </div>
-
-      <button type="submit" className="btn">Guardar</button>
+      <button type="submit">Enviar</button>
+      {message && <p>{message}</p>}
     </form>
   );
-}
+};
 
 export default UserForm;

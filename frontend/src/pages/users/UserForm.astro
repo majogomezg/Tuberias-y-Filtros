@@ -1,0 +1,42 @@
+---
+import { createUser } from '@scripts/users';
+
+let message = '';
+
+if (Astro.request.method === "POST") {
+  try {
+    console.log("Creando usuario...");
+    const data = await Astro.request.formData();
+    console.log(data);
+    const nombre = data.get("nombre");
+    const email = data.get("email");
+
+    if (!nombre || !email) {
+      console.error("Nombre o email no proporcionado");
+      message = 'Error: Nombre o email no proporcionado';
+    } else {
+      const result = await createUser({ nombre: nombre, email: email });
+      console.log(result);
+      message = `Usuario creado con id: ${result.id}`;
+    }
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+      message = 'Error al enviar el usuario';
+    }
+  }
+}
+---
+<form class="user-form" method="POST">
+<h2>Crear o Editar Usuario</h2>
+<div class="form-group">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required />
+</div>
+<div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+</div>
+<button type="submit" class="submit-btn">Enviar</button>
+{message && <p>{message}</p>}
+</form>

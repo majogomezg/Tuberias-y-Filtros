@@ -1,14 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { User, Task } from '@scripts/types';
-import { useState, useEffect } from 'react';
-import React from 'react';
-import { createTask, fetchTasks } from'@scripts/tasks';
-import Taskform from './TaskForm';// Ajusta la ruta según tu estructura de carpetas
+import Taskform from './TaskForm';
 
 ---
 <Layout>
-  <Taskform />
+  <Taskform client:load />
 </Layout>
 
 <style>
