@@ -4,6 +4,13 @@ import { User } from './types';
 
 const apiUrl = 'http://localhost:5001';
 
+//Get all users
+export const fetchUsers = async (): Promise<User[]> => {
+  const response = await fetch(`${apiUrl}/usuarios`);
+  const data = await response.json();
+  return data.usuarios;
+};
+
 // Función para crear un nuevo usuario
 export const createUser = async (user: User): Promise<User> => {
   console.log('user', user);

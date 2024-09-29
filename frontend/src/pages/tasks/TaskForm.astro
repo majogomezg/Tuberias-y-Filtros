@@ -1,0 +1,57 @@
+---
+import { createTask } from '@scripts/tasks';
+import { fetchUsers } from '@scripts/users';
+import { User } from '@scripts/types';
+
+let message = '';
+
+const usuarios : User[] = await fetchUsers();
+
+if (Astro.request.method === "POST") {
+  try {
+    console.log("Enviando tarea...");
+    const data = await Astro.request.formData();
+    const description = data.get("description");
+    const userId = data.get("usuario_id");
+
+    if (!description || !userId) {
+      console.error("Descripción o ID de usuario no proporcionado");
+      message = 'Error: Descripción o ID de usuario no proporcionado';
+    } else {
+      const result = await createTask({ descripcion: description, usuario_id: userId });
+      console.log('Tarea enviada con éxito:', result);
+      message = `Tarea creada con id: ${result.id}`;
+    }
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error('Error al enviar la tarea:', error.message);
+      message = 'Error al enviar la tarea';
+    }
+  }
+}
+---
+<form id="task-form" class="form" method="POST">
+  <h2>Crear Tarea</h2>
+  <div class="form-group">
+    <label for="description">Descripción:</label>
+    <input
+      type="text"
+      id="description"
+      name="description"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="usuario_id">Usuario:</label>
+    <select id="usuario_id" name="usuario_id" required>
+      <option value="">Seleccione un usuario</option>
+      {usuarios.map((user : User) => (
+        <option value={user.id}>{user.nombre} - {user.email}</option>
+      ))}
+    </select>
+  </div>
+
+  <button type="submit" class="btn">Enviar Tarea</button>
+  {message && <p>{message}</p>}
+</form>

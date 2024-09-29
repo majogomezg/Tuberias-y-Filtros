@@ -17,11 +17,11 @@ export type User = {
   
   export type Task = {
   
-    id: string;
+    id?: string;
   
     descripcion: string;
   
-    user_id: string;
+    usuario_id: string;
   
   };
   
