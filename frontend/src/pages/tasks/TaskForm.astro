@@ -18,7 +18,7 @@ if (Astro.request.method === "POST") {
       console.error("Descripción o ID de usuario no proporcionado");
       message = 'Error: Descripción o ID de usuario no proporcionado';
     } else {
-      const result = await createTask({ descripcion: description, usuario_id: userId });
+      const result = await createTask({ descripcion: description as string, usuario_id: userId as string });
       console.log('Tarea enviada con éxito:', result);
       message = `Tarea creada con id: ${result.id}`;
     }

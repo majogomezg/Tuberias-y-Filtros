@@ -15,7 +15,7 @@ if (Astro.request.method === "POST") {
       console.error("Nombre o email no proporcionado");
       message = 'Error: Nombre o email no proporcionado';
     } else {
-      const result = await createUser({ nombre: nombre, email: email });
+      const result = await createUser({ nombre: nombre as string, email: email as string });
       console.log(result);
       message = `Usuario creado con id: ${result.id}`;
     }

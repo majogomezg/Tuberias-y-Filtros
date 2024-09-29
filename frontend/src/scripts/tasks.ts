@@ -1,6 +1,5 @@
 // src/scripts/tasks.ts
 import type { Task } from './types'; // Importa la interfaz solo como tipo
-import type { User } from './types';
 
 const apiUrl = 'http://localhost:5001'; // URL base del backend Flask
 
