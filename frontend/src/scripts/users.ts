@@ -2,7 +2,7 @@
 
 import { User } from './types';
 
-const apiUrl = 'http://localhost:5001';
+const apiUrl = 'http://service-a:5000';
 
 //Get all users
 export const fetchUsers = async (): Promise<User[]> => {

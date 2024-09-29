@@ -1,7 +1,7 @@
 // src/scripts/tasks.ts
 import type { Task } from './types'; // Importa la interfaz solo como tipo
 
-const apiUrl = 'http://localhost:5001'; // URL base del backend Flask
+const apiUrl = 'http://service-a:5000'; // URL base del backend Flask
 
 // Función para obtener todas las tareas
 export const fetchTasks = async (): Promise<Task[]> => {
