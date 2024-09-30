@@ -44,6 +44,8 @@ Desde el directorio raíz del proyecto, ejecuta:
 bash
 Copy code
 docker-compose up --build
+ACÁ ES NECESARIO DE REINICIAR EL CONTENEDOR DEL SERVICE A YA QUE AL EJECUTAR LOS CONTENEDORES
+SE CAE, SOLO EN REINICIARLO DESDE DOCKER Y FUNCIONA PERFECTAMENTE
 # Verificación
 Acceso a la Aplicación Web
 Abre tu navegador y visita http://localhost:4321 para acceder a la interfaz de la aplicación.
